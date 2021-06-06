@@ -28,7 +28,7 @@ app.options('*',cors())
 
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
-//token verification(authentication)  
+//token verification(authentication)
 app.use(authJwt())
 app.use(errorHandler)
 
@@ -59,6 +59,6 @@ mongoose
 
 //Running Server
 
-app.listen(3000, () => {
-  console.log("Server is running at http://localhost:3000");
+app.listen(3000,() => {
+  console.log("Server is running at http://192.168.43.173:3000");
 });

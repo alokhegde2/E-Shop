@@ -73,7 +73,7 @@ router.post('/login',async (req,res) =>{
             {expiresIn:'1d'}
         )
 
-        res.status(200).send({user:user.email,token:token})
+        res.status(200).send(token)
     }else{
         return res.status(400).json({message:"password is wrong"})
     }
